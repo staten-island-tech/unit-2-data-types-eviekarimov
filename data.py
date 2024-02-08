@@ -21,7 +21,7 @@ def check(x):
         print("please login")
     check(x) """
 
- values = [1,2.23,5,7,2,30,15]
+ """values = [1,2.23,5,7,2,30,15]
 print(values)
 for i in values:
     print(values[0]) #bracekts show position in list
@@ -52,5 +52,54 @@ def get_all_factors(n):
          factors.append(i)
     return factors
 
-number = int(input("please enter a number: ":))
+number = int(input("please enter a number: ":)) """
+
+
+
+#Challenge 1
+x = float(input("give me a number"))
+if (x%2) == 0:
+   print('even')
+else:
+   print('odd')
+
+
+   #Challenge 2
+x = int(input('Subtotal'))
+Service = input('How was the service?')
+if Service == ('bad'):
+  print(float(x))
+elif Service == ('okay'):
+  print(float(x*1.15))
+elif Service == ('good'):
+  print(float(x*1.2*))
+elif Service == ('great'):
+  print(float(x*1.25))
+
+#Challge3
+def allfactors(n):
+  factors = []
+  for i in range(1,n+1):
+    if n%i == 0:
+      factors.append(i)
+return factors
+
+number = int(input("Please enter a number: "))
+listfactors = allfactors(number)
+print(listfactors)
+
+#challgen4
+numX = int(int("Please enter the first number: "))
+numY = int(input("Please enter the second number"))
+def gcf(numXZ,numY):
+  if numX > numY:
+    x = numY
+  else:
+    x = numX
+    for i in range(1,x+1):
+      if numX%i == 0 and numY%i == 0:
+        hcf = i
+        return hcf
+      print(gcf(numX,numY)) 
+
 
