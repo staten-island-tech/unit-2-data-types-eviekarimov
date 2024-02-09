@@ -91,7 +91,7 @@ print(listfactors)
 #challgen4
 numX = int(int("Please enter the first number: "))
 numY = int(input("Please enter the second number"))
-def gcf(numXZ,numY):
+def gcf(numX,numY):
   if numX > numY:
     x = numY
   else:
