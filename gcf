@@ -26,3 +26,13 @@ n = int(input("Give me your number:"))
 
 print("The Greatest Common Factor is:", Greatest_Common_Factor(m,n))
 
+
+
+x = int(input("number 1: "))
+y = int(input("number 2: "))
+
+def gcf(x,y):
+    global gcf
+    for i in range (2,y)
+    if x%i == 0 and y%i == 0:
+        factor.append
