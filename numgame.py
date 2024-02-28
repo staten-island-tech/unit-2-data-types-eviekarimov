@@ -6,7 +6,7 @@ while (x) != number:
         print ("It's smellier; try again")
     if x < number: 
         print ("Its booger, try again")
-        x = input "guess again"
+        x = input ;"guess again"
 else: 
         print ("you got it!")
 
