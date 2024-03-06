@@ -1,21 +1,25 @@
 movies = {
     'title': 'Grown Ups',
     'genre': 'Comedy',
-    'director': 'Adam Sandler',
-    'released' :
+    'main character': 'Adam Sandler',
+    'released' : '2010',
 },{
-     'title': 
-     'genre':
-     'director':
-     'released':
+     'title': 'Dumb and Dumber',
+     'genre': 'Comedy',
+     'main character': 'Jim Carrey',
+     'released': '1994',
 },{
-    'title': 
-     'genre':
-     'director':
-     'released':
+    'title': 'Rush Hour',
+     'genre': 'Action',
+     'main character': 'Jackie Chan',
+     'released': '1998',
 },{ 
-    'title': 
-     'genre':
-     'director':
-     'released': 
+    'title': 'Back To The Future',
+     'genre': 'Drama',
+     'main character': 'Michael J Fox',
+     'released': '1985',
 }
+
+for book in books:
+    print(book['title'])
+

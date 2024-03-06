@@ -1,8 +1,24 @@
 import random
-(x) = int(input("Guess: "))
-number = random.choice([1,2,3,4,5,6,7,8,9,10])
+num = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+y = ('Incorrect')
+incorrectanswers = []
 
-if x > number:
+while y == ('Incorrect'):
+    x = int(input("Number:"))
+    if (x) == (num):
+        print('correct')
+        y = ('Correct')
+
+    else:
+        incorrectanswers.append(x)
+        if x < num:
+            print("go again, numby is bigger")
+        if x > num:
+            print("go again: numby is less")
+
+        print(incorrectanswers)
+
+"""if x > number:
     x == ("incorrect")
     print("It's smaller; try again")
         
@@ -15,7 +31,7 @@ else:
 
 
 while x == ("incorrect"):
-    (x) = int(input("Guess again:"))
+    (x) = int(input("Guess again:")) this is wrong"""
 
        
 
