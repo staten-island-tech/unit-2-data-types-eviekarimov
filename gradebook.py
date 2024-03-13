@@ -5,7 +5,7 @@ grades = []
 student = {
     'Name':name,
     'Class': Class,
-    'grade': grade,
+    'grade': grades,
 }
 
 def calc_avg():
@@ -13,16 +13,17 @@ def calc_avg():
     avg = total / len(grades)
     return avg
 
+
 def input_grades():
     number = int(input("WHat grades do u wanna input?)"))
-    if i in range(number):
+    for i in range(number):
         grade = float(input("enter grade: "))
         student("grades").append(grade)
     avg_grade = calc_avg(student("grades"))
     return avg_grade
-    
-     input_grades()
-    calc_avg()
+         
+input_grades()
+calc_avg()
 
 
 

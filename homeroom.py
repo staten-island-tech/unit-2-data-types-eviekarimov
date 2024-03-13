@@ -8,4 +8,4 @@ if first_initial ["A","B","C","D","E","F","G"]:
 elif first_initial ["H", "I", "J", "K", "L", "M", "N", "O", "P", ] :  
  print("youre in homeroom 102")
 elif first_initial ["Q", "R", "S", "T", "U" "V", "W", "X", "Y", ]:
- print("yooure in homeroom 103")
+ print("youre in homeroom 103")
