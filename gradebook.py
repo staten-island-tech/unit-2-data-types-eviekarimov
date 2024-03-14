@@ -22,8 +22,9 @@ def input_grades():
     avg_grade = calc_avg(student("grades"))
     return avg_grade
          
-input_grades()
+
 calc_avg()
+input_grades()
 
 
 
