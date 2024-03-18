@@ -1,30 +1,29 @@
 name = input("name: ")
 Class = input("official class: ")
-grades = []
+grades = " "
 
 student = {
-    'Name':name,
-    'Class': Class,
-    'grade': grades,
+    'Name':[name],
+    'Class': [Class],
+    'grade': [grades],
 }
 
-def calc_avg():
+def calc_avg(grades):
     total = sum(grades)
     avg = total / len(grades)
     return avg
 
 
 def input_grades():
-    number = int(input("WHat grades do u wanna input?)"))
+    number = int(input("how many grades do u wanna input?) "))
     for i in range(number):
         grade = float(input("enter grade: "))
-        student("grades").append(grade)
-    avg_grade = calc_avg(student("grades"))
-    return avg_grade
-         
+        student['grades'].append(grade)
+    #avg_grade = calc_avg(student("grades"))
 
-calc_avg()
+print(student)
 input_grades()
+#calc_avg(grades)
 
 
 
