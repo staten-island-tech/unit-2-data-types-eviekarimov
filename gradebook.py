@@ -3,15 +3,15 @@ Class = input("Official class: ")
 grades = []
 
 student = {
-    'Name':[name],
-    'Class': [Class],
-    'grade': [grades],
+    'Name': name,
+    'Class': Class,
+    'grades': grades,
 }
 
 def calc_average(grades):
     total = sum(grades)
-    avg = total / len(grades)
-    return avg
+    avg = total / len (student['grades'])
+    print(avg)
 
 
 def input_grades():
@@ -22,17 +22,7 @@ def input_grades():
     
 
 input_grades()
-print(student)
-
-
-
-
-
-
-
-
-
-
+calc_average(grades)
 '''from statistics import mean
 
 grades = int(input("Input your grad4es, si or no"))
