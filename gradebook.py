@@ -3,7 +3,7 @@ Class = input("Official class: ")
 grades = []
 
 student = {
-    'Name': name,
+    'Name': name,   
     'Class': Class,
     'grades': grades,
 }
