@@ -1,30 +1,34 @@
-name = input("Name: ")
-Class = input("Official class: ")
-grades = []
-
-
 student = {
-    'Name': name,   
-    'Class': Class,
-    'grades': grades,
-    'average': avg,
+    'Name': [],   
+    'Class': [],
+    'grades': [],
+    'average': [],
 }
 
-def calc_average(grades):
-    total = sum(grades)
-    avg = total / len (student['grades'])
-    print(avg)
-
-
-def input_grades():
-    number = int(input("How many grades do u wanna input? "))
-    for i in range(number):
-        grade = float(input("Enter grade: "))
-        student['grades'].append(grade)
-
-def add_students():
-    students
+def inner_function():
+    name = input("Name: ")
+    Class = input("Official class: ")
+    student['Name'].append(name)
+    student['Class'].append(Class)
+    def calc_average(x):
+        avg=sum(x) / len(x)
+        student['average'].append(avg)
+    def input_grades():
+        grades = []
+        number = int(input("How many grades do u wanna input? "))
+        for i in range(number):
+           g = float(input("Enter grade: "))
+           grades.append(g)
+        student['grades'].append(grades)
+        a = calc_average(grades)
+        return a
+    input_grades()
+  
+students = (input("do u wanna add a student?(Y/N) "))
+while students == 'Y':  
+    inner_function()
+    students = input("Do u want to add anotha student?(Y/N)")
+   
+       
     
-
-input_grades()
-calc_average(grades)
+               
