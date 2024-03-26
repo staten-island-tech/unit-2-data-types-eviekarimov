@@ -24,10 +24,11 @@ def inner_function():
         return a
     input_grades()
   
-students = (input("do u wanna add a student?(Y/N) "))
+students = (input("do u wanna add a student?(Y/N) ")).upper()
 while students == 'Y':  
     inner_function()
-    students = input("Do u want to add anotha student?(Y/N)")
+    students = input("Do u want to add anotha student?(Y/N)").upper()
+    print(student)
    
        
     
