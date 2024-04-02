@@ -58,7 +58,7 @@ number = int(input("please enter a number: ":)) """
 
 #Challenge 1
 x = float(input("give me a number"))
-if (x%2) == 0:
+if (x %2) == 0:
    print('even')
 else:
    print('odd')
@@ -82,7 +82,7 @@ def allfactors(n):
   for i in range(1,n+1):
     if n%i == 0:
       factors.append(i)
-return factors
+ factors
 
 number = int(input("Please enter a number: "))
 listfactors = allfactors(number)
@@ -98,8 +98,8 @@ def gcf(numX,numY):
     x = numX
     for i in range(1,x+1):
       if numX%i == 0 and numY%i == 0:
-        hcf = i
+        gcf = i
         return hcf
-      print(gcf(numX,numY)) 
+      print(gcf(numX,numY)) """
 
 

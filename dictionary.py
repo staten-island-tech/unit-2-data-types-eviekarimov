@@ -20,6 +20,7 @@ movies = {
      'released': '1985',
 }
 
-for book in books:
-    print(book['title'])
+for movie in movies:
+    print(movie['title'])
+    
 
